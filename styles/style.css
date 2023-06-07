@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #B799FF, #ACBCFF, #AEE2FF);
+  background-repeat: no-repeat;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container__choice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.container__result {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Buttons Container */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons-container__button {
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #AEE2FF;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.buttons-container__button:hover {
+  background-color: #ffc166;
+}
+
+.score {
+  text-align: center;
+}
+
+.score__text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.score__player,
+.score__computer {
+  font-size: 16px;
+  color: #333;
+}
+
+.score__count {
+  font-weight: bold;
+}
+
+.reset-button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  margin: 30px 0;
+}
+
+.reset-button:hover {
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+}
+
+.reset-button {
+  margin-bottom: 20px;
+}
+
+.moving-text {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.moving-text span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveText 25s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#mute-music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mute-image {
+  width: 30px;
+  margin: 10px;
+}
+
+.container .moving-text {
+  position: absolute;
+  top: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="aplication">
+        
+        <div class="container">
+          <h2 class="container__title">Your Choice: <span id="user-choice" class="container__choice"></span></h2>
+          <h2 class="container__title">Computer Choice: <span id="computer-choice" class="container__choice"></span></h2>
+          <h2 class="container__title">Result: <span id="result" class="container__result"></span></h2>
+        </div>
+      
+        <div class="buttons-container">
+          <button id="rock" class="buttons-container__button">rock</button>
+          <button id="paper" class="buttons-container__button">paper</button>
+          <button id="scissors" class="buttons-container__button">scissors</button>
+        </div>
+      
+        <div class="score">
+          <p class="score__text">Current score:</p>
+          <p class="score__player">Player: <span id="scorePlayer" class="score__count">0</span></p>
+          <p class="score__computer">Computer: <span id="scoreComputer" class="score__count">0</span></p>
+        </div>
+        
+        <div class="reset-button">Reset Score</div>
+        <div class="container">
+            <div class="moving-text">
+              <span> Luck Good Luck Good Luck Good Luck Good Luck Luck Good Luck Good Luck Good Luck Good Luck Good Luck Good Luck </span>
+            </div>
+          </div>
+
+        <div id="mute-music">
+          <img src="/img/mute.png" alt="mute" id="mute-image">
+        </div>
+          
+        <audio id="backgroundMusic" src="/music/Mozart - Rondo Alla Turca.mp3" loop></audio>
+    </div>
+    
+    
+    
+    <script src="/script.js"></script>
+</body>
+</html>
